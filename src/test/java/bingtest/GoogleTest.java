@@ -1,4 +1,4 @@
-package googletest;
+package bingtest;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -19,7 +19,7 @@ public class GoogleTest {
 	
 			WebDriver wd=new ChromeDriver();
 			wd.manage().window().maximize();
-			wd.get("https://www.bing.com/");
+			wd.get("https://www.google.com/");
 			wd.findElement(By.name("q")).sendKeys("Chennai");
 			wd.findElement(By.name("q")).submit();
 			
